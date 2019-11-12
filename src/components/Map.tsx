@@ -61,7 +61,6 @@ class Map extends React.Component<Props, State> {
         <MapView
           ref={this.map}
           loadingEnabled
-          provider="google"
           initialRegion={this.state.region}
           style={styles.map}>
           {this.state.markers.map((marker, index) => (
